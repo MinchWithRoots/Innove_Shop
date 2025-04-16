@@ -51,6 +51,28 @@ h1 {
   padding-bottom: 24px;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+
+  margin-bottom: 80px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+
+  margin-bottom: 8px;
+
+  opacity: 50%;
+}
+
 p {
   color: var(--primary_color);
   font-weight: 400;
@@ -94,6 +116,8 @@ button {
   line-height: 140%;
 
   margin-bottom: 80px;
+
+  cursor: pointer;
 }
 
 header {
@@ -167,6 +191,8 @@ header nav li:hover a::after {
   width: 24px;
   height: 24px;
   background-size: cover;
+
+  cursor: pointer;
 }
 
 .shopping_bag {
@@ -174,6 +200,8 @@ header nav li:hover a::after {
   width: 24px;
   height: 24px;
   background-size: cover;
+
+  cursor: pointer;
 }
 
 main {
