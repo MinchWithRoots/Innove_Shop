@@ -422,3 +422,7 @@ h5 {
 .swiper-2 .swiper-slide{
   margin-left: 32px;
 }
+
+#reviews img {
+  border-radius: 0;
+}
