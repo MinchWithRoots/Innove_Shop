@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Innove</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Слайдер -->
+    <script src="./lib/swiper-bundle.min.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+    <link rel="stylesheet" href="./lib/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
@@ -20,8 +25,8 @@
           </ul>
         </nav>
         <div class="icons-container">
-         <div class="search"></div>
-         <div class="shopping_bag"></div>
+          <div class="search"></div>
+          <div class="shopping_bag"></div>
         </div>
       </div>
     </header>
@@ -31,10 +36,12 @@
         <h1>НОВИНКА НЕДЕЛИ</h1>
         <p>
           Мягкая игрушка антистресс Кот+Акула=КОТАКУЛА. Приятная на ощупь.
-          <br>
+          <br />
           Выполнена из качественного материала. Собери всю коллекцию.
         </p>
-        <button>К покупкам <img src="./img/ArrowDownRight.svg" alt=""></button>
+        <button>
+          К покупкам <img src="./img/ArrowDownRight.svg" alt="" />
+        </button>
 
         <div class="img-container">
           <img src="./img/image1.jpg" alt="" />
@@ -43,7 +50,7 @@
           <img src="./img/image4.jpg" alt="" />
         </div>
 
-        <hr/>
+        <hr />
       </div>
     </main>
 
@@ -52,28 +59,130 @@
         <h3>Наша продукция</h3>
         <h2>Популярные товары</h2>
 
-        <div class="slider-container"></div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./img/image5.jpg" alt="" />
+
+              
+              <h3>Елка Premium</h3>
+              <div class="desc">
+                <h4><img src="./img/Star 1.svg" alt="" />4.9</h4>
+                <h5>(360 отзывов)</h5>
+              </div>
+             
+
+              <button class="popular_button">К покупкам</button>
+            </div>
+
+
+            <div class="swiper-slide">
+              <img src="./img/image6.jpg" alt="" />
+
+              
+              <h3>Гирлянда Звезда</h3>
+              <div class="desc">
+                <h4><img src="./img/Star 1.svg" alt="" />4.9</h4>
+                <h5>(500 отзывов)</h5>
+              </div>
+
+              <button class="popular_button">Купить</button>
+            </div>
+
+
+
+            <div class="swiper-slide">
+              <img src="./img/image5.jpg" alt="" />
+
+              <h3>Елка Premium</h3>
+              <div class="desc">
+                <h4><img src="./img/Star 1.svg" alt="" />4.9</h4>
+                <h5>(360 отзывов)</h5>
+              </div>
+             
+
+              <button class="popular_button">К покупкам</button>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./img/image5.jpg" alt="" />
+
+              
+              <h3>Елка Premium</h3>
+              <div class="desc">
+                <h4><img src="./img/Star 1.svg" alt="" />4.9</h4>
+                <h5>(360 отзывов)</h5>
+              </div>
+             
+
+              <button class="popular_button">К покупкам</button>
+            </div>
+            
+
+            
+            
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination">
+            <div class="swiper-pagination-bullet">
+
+            </div>
+          </div>
+        </div>
+
+        <hr/>
       </div>
     </section>
 
     <section id="social-proof">
       <div class="container">
-        <hr />
+     
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <div class="item"> 
+          <span>300+</span>
+          <h3>тысяч клиентов</h3>
+        </div>
 
-        <hr />
+       <div class="vert-line"></div>
+       
+        <div class="item"> 
+          <span>5+</span>
+          <h3>лет с вами</h3>
+        </div>
+
+        <div class="vert-line"></div>
+
+        <div class="item"> 
+          <span>15+</span>
+          <h3>брендов</h3>
+        </div>
+
+        <div class="vert-line"></div>
+
+        <div class="item"> 
+          <span>5 000+</span>
+          <h3>тысяч доставленных заказов</h3>
+        </div>
+
+        
       </div>
     </section>
 
     <section id="about_us">
+      <hr>
+
+      <h3>О нас</h3>
+      <h2>Почему мы лучшие</h2>
       <div class="container">
+     
+
+     
+
         <div class="text-container">
-          <h3>О нас</h3>
-          <h2>Почему мы лучшие</h2>
+          
 
           <p>
             Наша миссия - исполнять мечту и изменить жизнь людей к лучшему с
@@ -81,20 +190,97 @@
             доставим. Вам не придется никуда ехать.
           </p>
           <p>Наши достижения 
-            ... ... ... ...
-         </p>
-         <p>Мы создаем уют в Вашем доме .....
-            ...
-         </p>
+            ... <br> ... <br> ... <br> ...</p>
+          <p>Мы создаем уют в Вашем доме ..... <br> ...</p>
 
-         <button>Подробнее <img src="./img/ArrowDownRight.svg" alt=""></button>
+          <button>
+            Подробнее <img src="./img/ArrowDownRight.svg" alt="" />
+          </button>
         </div>
 
         <div class="about_us-images">
-          <img src="./img/about_us1.jpg" alt="" />
+          <img class="first" src="./img/about_us1.jpg" alt="" style="position: relative;top: 64px;">
           <img src="./img/about_us2.jpg" alt="" />
         </div>
       </div>
     </section>
+
+
+
+    <section id="reviews">
+      <div class="container">
+        <h3>Отзывы</h3>
+        <h2>Что говорят о нас</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+          
+
+
+            <div class="swiper-slide">
+              
+
+              <div class="head-container">
+                <img src="./img/reviews1.jpg" alt="" />
+                <h4>Михаил</h4>
+
+              </div>
+              
+              <div class="desc">
+                <img src="./img/5stars.svg" alt="" />
+                <h5>(500 отзывов)</h5>
+              </div>
+
+             
+            </div>
+
+
+
+            <div class="swiper-slide">
+              <img src="./img/reviews2.jpg" alt="" />
+
+              <h3>Елка Premium</h3>
+              <div class="desc">
+                <h4><img src="./img/Star 1.svg" alt="" />4.9</h4>
+                <h5>(360 отзывов)</h5>
+              </div>
+             
+
+              
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./img/reviews3.jpg" alt="" />
+
+              
+              <h3>Елка Premium</h3>
+              <div class="desc">
+                <h4><img src="./img/Star 1.svg" alt="" />4.9</h4>
+                <h5>(360 отзывов)</h5>
+              </div>
+             
+
+            
+            </div>
+            
+
+            
+            
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination">
+            <div class="swiper-pagination-bullet">
+
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
   </body>
 </html>
