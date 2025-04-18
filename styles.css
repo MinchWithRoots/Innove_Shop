@@ -136,11 +136,12 @@ button:hover {
 
   color: var(--primary_color);
 
-  transition: .3s;
+  transition: 0.3s;
 }
 
 button:hover img {
-  filter: invert(10%) sepia(15%) saturate(27%) hue-rotate(318deg) brightness(91%) contrast(87%);
+  filter: invert(10%) sepia(15%) saturate(27%) hue-rotate(318deg)
+    brightness(91%) contrast(87%);
 }
 
 header {
@@ -263,6 +264,84 @@ section {
   padding-top: 80px;
 }
 
+.big-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.big-button-container h3 {
+  margin-bottom: 0;
+}
+
+.big-button {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px;
+  padding: 8px;
+  width: 756px;
+  height: 77px;
+
+  background: #f6f6f6;
+
+  gap: 40px;
+}
+
+.big-button .button-1,
+.big-button .button-2,
+.big-button .button-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  border-radius: 40px;
+
+  padding: 16px 40px;
+  width: 209px;
+  height: 61px;
+}
+
+.big-button .button-2 {
+  padding: 16px 30px;
+  width: 290px;
+}
+
+.big-button .button-1 {
+  padding: 16px 30px;
+  width: 209px;
+  height: 61px;
+}
+
+.big-button .button-1:hover {
+  border-radius: 40px;
+  padding: 16px 30px;
+  width: 209px;
+  height: 61px;
+
+  background: #fff;
+  transition: 0.4s;
+
+  cursor: pointer;
+}
+
+.big-button .button-2:hover {
+  border-radius: 40px;
+  background: #fff;
+  transition: 0.4s;
+
+  cursor: pointer;
+}
+
+.big-button .button-3:hover {
+  border-radius: 40px;
+  background: #fff;
+  transition: 0.4s;
+
+  cursor: pointer;
+}
+
 .popular_button {
   border-radius: 8px;
   width: 150px;
@@ -343,7 +422,7 @@ h5 {
 /* ---------------------------------------------------------------- */
 /* ------------------ Social Proof------------------------- */
 
-#social-proof{
+#social-proof {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -351,8 +430,14 @@ h5 {
 
 #social-proof .item {
   text-align: center;
+
+  width: 214px;
   margin-right: 60px;
   margin-left: 60px;
+}
+
+#social-proof .item:last-child {
+  width: 300px;
 }
 
 #social-proof .item span {
@@ -368,6 +453,9 @@ h5 {
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+
+  opacity: 100%;
+  font-family: "Playfair Display SC";
 }
 
 .vert-line {
@@ -377,12 +465,10 @@ h5 {
   width: 1px;
 }
 
-
 /* ---------------------------------------------------------------- */
 /* ------------------ О нас------------------------- */
 
-
-#about_us .container{
+#about_us .container {
   display: flex;
   justify-content: space-between;
 
@@ -399,15 +485,14 @@ h5 {
   margin-top: 80px;
 }
 
-#about_us .text-container{
+#about_us .text-container {
   display: flex;
   flex-direction: column;
-  justify-content:left;
+  justify-content: left;
   align-items: start;
   text-align: left;
 
   /* margin-top: 80px; */
-  
 }
 
 #about_us .text-container p {
@@ -432,25 +517,52 @@ h5 {
   margin-left: 24px;
 }
 
-
-
+/* ---------------------------------------------------------------- */
+/* ------------------ Отзывы------------------------- */
 
 #reviews {
   margin-bottom: 80px;
 }
 
-#reviews .container .swiper.swiper-2 .swiper-wrapper .swiper-slide{
+#reviews .container .swiper.swiper-2 .swiper-wrapper {
+  width: 100%;
+  position: relative;
+
+  margin-bottom: 40px;
+}
+
+#reviews .container .swiper.swiper-2 .swiper-wrapper .swiper-slide {
   width: 405px !important;
-  height: 335px !important; 
+  height: 335px !important;
+
+  margin-left: 0;
+  margin-right: auto;
 }
 
-#reviews .container .swiper.swiper-2 .swiper-wrapper .swiper-slide:first-child {
-  margin-left: 30px;
+#reviews
+  .container
+  .swiper.swiper-2
+  swiper-wrapper
+  .swiper-slide
+  .head-container {
+  display: flex !important;
+  flex-direction: column !important;
 }
 
-#reviews .container .swiper.swiper-2 swiper-wrapper .swiper-slide .head-container {
-  display: flex;
-  flex-direction: column;
+#reviews
+  .container
+  .swiper.swiper-2
+  .swiper-wrapper
+  .swiper-slide
+  .head-container {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  position: absolute;
+  top: 35px;
+
+  margin-left: 16px;
 }
 
 #reviews img {
@@ -459,8 +571,194 @@ h5 {
   height: 100px;
 }
 
+#reviews
+  .container
+  .swiper.swiper-2
+  swiper-wrapper
+  .swiper-slide
+  .head-container
+  .stars-container {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+}
+
 #reviews .container .swiper.swiper-2 .swiper-wrapper .swiper-slide p {
   display: flex;
   text-align: left;
   width: 300px !important;
+}
+
+#reviews hr {
+  margin-top: 80px;
+}
+
+/* ---------------------------------------------------------------- */
+/* ------------------ Интересное ------------------------- */
+
+#interesting .container .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 104px;
+}
+
+#interesting .container .items-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#interesting .container .items-container .item {
+  border: 1px solid #d9d9d9;
+  border-radius: 0 96px 0 40px;
+  padding: 16px;
+  width: 405px;
+  height: 509px;
+}
+
+#interesting .container .items-container .item h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #252525;
+  opacity: 100%;
+
+  margin-bottom: 16px;
+}
+
+#interesting .container .items-container .item span {
+  display: flex;
+  position: relative;
+  left: 280px;
+}
+
+#interesting .container .items-container .item span img {
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  justify-self: center;
+
+  margin-left: 8px;
+}
+
+#interesting .container .items-container .item .top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#interesting .container .items-container .item .top-container img {
+  margin-right: 0;
+  border-radius: 0;
+
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+#interesting .container .items-container .item .top-container h5 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #252525;
+  opacity: 100%;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* ---------------------------------------------------------------- */
+/* ------------------ Footer ------------------------- */
+
+footer {
+  background-color: var(--primary_color);
+}
+
+footer .container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+footer .contacts-container {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-right: 145px;
+}
+
+footer .contacts-container span.rights {
+  margin-bottom: 32px;
+}
+
+footer .contacts-container h1,
+.contacts-container span {
+  color: var(--bg_color);
+  text-align: justify;
+}
+
+footer .contacts-container h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+footer .contacts-container h1 img {
+  border-radius: 0;
+  width: 58px;
+  height: 58px;
+  background-image: url("./img/LogoWhite.svg");
+  background-size: cover;
+
+  margin-right: 24px;
+}
+
+footer .container .footer-info {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 150px;
+
+  margin-left: 80px;
+}
+
+footer .footer-info h2,
+.footer-info ul li {
+  color: var(--bg_color);
+}
+
+footer .footer-info h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140%;
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+footer .footer-info ul li {
+  font-weight: 400;
+  font-size: 16px;
+  list-style: none;
+  padding-bottom: 16px;
+}
+
+footer .footer-info .socials-container img {
+  border-radius: 0;
+  opacity: 0.7;
+
+  width: 48px;
+  height: 48px;
+
+  gap: 8px;
 }

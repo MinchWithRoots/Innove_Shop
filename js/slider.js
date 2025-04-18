@@ -25,21 +25,25 @@ const swiper2 = new Swiper('.swiper-2', {
     slidesPerView: 1,
     spaceBetween: 10,
 
-    initialSlide:1,
+    initialSlide:0,
     centeredSlides:true,
 
     pagination: {
         el: '.swiper-pagination',
-        clickable: true
+        clickable: true,
     },
 
     breakpoints: {
         1078: {
-            slidesPerView: 3,
-            spaceBetween: 24,
+            slidesPerView: 2,
+            spaceBetween: 32,
         }
     },
 
+    Freemode: {
+        enabled: true
+    },
     centeredSlides: true,
-    centeredSlidesBounds: true
+    // centeredSlides: true,
+    // centeredSlidesBounds: true
 });
