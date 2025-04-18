@@ -16,7 +16,7 @@
       <div class="container">
         <div class="logo"></div>
         <nav>
-          <ul>
+          <ul onclick="toggleMenu()">
             <li><a href="">Каталог</a></li>
             <li><a href="">О компании</a></li>
             <li><a href="">Каталог</a></li>
@@ -27,6 +27,12 @@
         <div class="icons-container">
           <div class="search"></div>
           <div class="shopping_bag"></div>
+        </div>
+
+        <div class="burger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </header>
@@ -383,5 +389,13 @@
       </div>
     </footer>
 
+
+
+    <script>
+      function toggleMenu() {
+        document.querySelector("header nav ul").classList.toggle("show");
+        document.querySelector(".burger").classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

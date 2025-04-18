@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
+    slidesPerView: 0.5,
     spaceBetween: 10,
 
     initialSlide:1,
@@ -22,7 +22,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 const swiper2 = new Swiper('.swiper-2', {
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 10,
 
     initialSlide:0,
