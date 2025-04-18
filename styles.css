@@ -28,6 +28,10 @@ img {
   align-items: center;
 }
 
+ul li a {
+  color: var(--primary_color);
+}
+
 h1,
 h2,
 h3,
@@ -178,29 +182,34 @@ header nav ul {
 }
 
 header nav a {
-  color: white;
+  color: var(--primary_color);
   text-decoration: none;
   display: inline-block;
 }
 
-header nav a::after {
-  content: "";
+header a::after {
+  content: '';
   display: block;
 
   width: 0%;
   height: 2px;
   background-color: var(--primary_color);
 
-  transition: 0.3s;
+  transition: .3s;
 
   margin-left: 50%;
 }
 
-header nav li:hover a::after {
+header li:hover a::after {
   width: 100%;
 
   margin-left: 0%;
 }
+
+header nav ul li:hover {
+  text-decoration: underline 2px solid var(--primary_color);
+}
+
 
 .icons-container {
   width: 64px;
@@ -594,6 +603,11 @@ h5 {
   margin-top: 80px;
 }
 
+#reviews hr:first-child {
+  padding-top: 0;
+  margin-bottom: 80px;
+}
+
 /* ---------------------------------------------------------------- */
 /* ------------------ Интересное ------------------------- */
 
@@ -753,6 +767,30 @@ footer .footer-info ul li {
   padding-bottom: 16px;
 }
 
+footer .container a {
+  color: var(--bg_color);
+  text-decoration: none;
+}
+
+footer .footer-info a::after {
+  content: '';
+  display: block;
+
+  width: 0%;
+  height: 2px;
+  background-color: white;
+
+  transition: .3s;
+
+  margin-left: 50%;
+}
+
+footer .footer-info li:hover a::after {
+  width: 100%;
+
+  margin-left: 0%;
+}
+
 footer .footer-info .socials-container img {
   border-radius: 0;
   opacity: 0.7;
@@ -761,4 +799,10 @@ footer .footer-info .socials-container img {
   height: 48px;
 
   gap: 8px;
+
+  cursor: pointer;
+}
+
+footer .footer-info .socials-container img:hover {
+  opacity: 100%;
 }
