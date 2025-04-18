@@ -1,9 +1,9 @@
 const swiper = new Swiper('.swiper', {
     slidesPerView: 0.5,
     spaceBetween: 10,
-
-    initialSlide:1,
-    centeredSlides:true,
+    initialSlide: 0,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
 
     pagination: {
         el: '.swiper-pagination',
@@ -11,14 +11,15 @@ const swiper = new Swiper('.swiper', {
     },
 
     breakpoints: {
+        700: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+        },
         1078: {
             slidesPerView: 4,
             spaceBetween: 24,
         }
-    },
-
-    centeredSlides: true,
-    centeredSlidesBounds: true
+    }
 });
 
 const swiper2 = new Swiper('.swiper-2', {
@@ -44,6 +45,4 @@ const swiper2 = new Swiper('.swiper-2', {
         enabled: true
     },
     centeredSlides: true,
-    // centeredSlides: true,
-    // centeredSlidesBounds: true
 });

@@ -835,6 +835,30 @@ footer .footer-info .socials-container img:hover {
     width: 80vw;
   }
 
+  h1 {
+    font-size: calc(45px + 19 * (100vw / 1280));
+  }
+
+  h2 {
+    font-size: calc(20px + 16 * (100vw / 1280));
+  }
+
+  h3 {
+    font-size: calc(16px + 8 * (100vw / 1280));
+  }
+
+  h5 {
+    font-size: calc(13px + 7 * (100vw / 1280));
+  }
+
+  h5 {
+
+  }
+
+  p{
+    font-size: calc(14px + 6 * (100vw / 1280));
+  }
+
   header .container {
     display: flex;
     align-self: center;
@@ -917,18 +941,70 @@ header nav ul.show {
   height:fit-content;
 }
 
+/* ------ popular ------ */
+
+.big-button-container {
+  display: none;
+  /* justify-content: center;
+  align-items: center;
+
+  margin-bottom: 40px; */
+}
+
+/* .big-button-container h3 {
+  margin-bottom: 0;
+}
+
+.big-button {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px;
+  padding: 8px;
+  width: 70vw;
+  height: 77px;
+
+  background: #f6f6f6;
+
+  gap: 40px;
+}
+
+.big-button .button-1,
+.big-button .button-2,
+.big-button .button-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  border-radius: 40px;
+
+  padding: 16px 40px;
+  width: 209px;
+  height: 61px;
+}
+
+.big-button .button-2 {
+  padding: 16px 30px;
+  width: 290px;
+}
+
+.big-button .button-1 {
+  padding: 16px 30px;
+  width: 209px;
+  height: 61px;
+} */
+
 .swiper-wrapper {
-  /* width: 80vw; */
+  width: 100%;
 }
 
 
 .swiper-slide {
-  width: 60vw;
-  height: auto;
+  width: auto;
+  height: 50vh !important;
 }
 
 .swiper-slide:first-child {
-  margin-left: 25px;
+  /* margin-left: 25px; */
 }
 
 }
