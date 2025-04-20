@@ -833,6 +833,7 @@ footer .footer-info .socials-container img:hover {
 @media screen and (max-width: 870px) {
   .container {
     width: 80vw;
+    overflow: hidden;
   }
 
   h1 {
@@ -881,6 +882,11 @@ footer .footer-info .socials-container img:hover {
     transition: .3s;
 
     z-index: 0;
+}
+ .icons-container {
+  position: absolute;
+  right: 12vw;
+
 }
 
 header nav ul li {
@@ -951,6 +957,33 @@ header nav ul.show {
   margin-bottom: 40px; */
 }
 
+
+.swiper-wrapper {
+  justify-content:space-evenly;
+}
+
+.swiper-slide:first-child {
+  margin-left: 0;
+}
+
+.swiper-wrapper .swiper-slide {
+  width: 80vw !important;
+}
+
+#reviews .container .swiper.swiper-2 {
+  justify-content: center;
+}
+
+#reviews .container .swiper.swiper-2 .swiper-wrapper .swiper-slide {
+  width: 70vw !important;
+
+  margin-left: 10vw;
+}
+
+#reviews .container .swiper.swiper-2 .swiper-wrapper .swiper-slide p {
+  width: 60vw !important;
+}
+
 /* .big-button-container h3 {
   margin-bottom: 0;
 }
@@ -993,7 +1026,7 @@ header nav ul.show {
   height: 61px;
 } */
 
-.swiper-wrapper {
+/* .swiper-wrapper {
   width: 100%;
 }
 
@@ -1001,10 +1034,103 @@ header nav ul.show {
 .swiper-slide {
   width: auto;
   height: 50vh !important;
+} */
+
+
+#social-proof {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
 }
 
-.swiper-slide:first-child {
-  /* margin-left: 25px; */
+.vert-line {
+  height: 5vh;
+}
+
+#about_us .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#about_us .container .text-container {
+  width: 80vw;
+}
+
+#about_us .container .text-container p {
+  width: 80vw;
+}
+
+#about_us .container .about_us-images {
+  display: flex;
+  width: 80vw;
+
+  padding-bottom: 10vh;
+
+  gap: 10vw;
+}
+
+#about_us .container .about_us-images img {
+  width: 35vw;
+  height: auto;
+
+  margin-left: 0;
+}
+
+#interesting .container .items-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 5vh;
+}
+
+#interesting .container .items-container .item {
+  height: fit-content;
+  width: 70vw;
+}
+
+#interesting .container .items-container .item img {
+  width: 65vw;
+
+  padding-right: 2vw;
+}
+
+#interesting .container .items-container .item h3 {
+  font-size: calc(16px + 8 * (100vw / 1280));
+}
+
+#interesting .container .items-container .item span {
+  left: 40vw;
+}
+
+#interesting .container .items-container .item span img {
+  width: 5vw;
+  height: auto;
+}
+
+#interesting .container .items-container .item .top-container img {
+  width: 10vw;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .contacts-container {
+  margin: 0;
+}
+
+footer .container .footer-info {
+  flex-direction: column;
+
+  margin-left: 0;
+  gap: 5vw;
 }
 
 }
