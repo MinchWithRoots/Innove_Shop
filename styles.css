@@ -1235,6 +1235,13 @@ footer .footer-info .socials-container img:hover {
   }
 }
 
+
+
+
+
+
+
+
 @media screen and (min-width: 1000px) and (max-width: 1530px) {
   .img-container img:last-child {
     display: none;
@@ -1394,6 +1401,50 @@ footer .footer-info .socials-container img:hover {
   #reviews hr:first-child {
     padding-top: 0;
     margin-bottom: 80px;
+  }
+
+
+
+  #interesting .container .items-container {
+    display: flex;
+    /* flex-direction: column; */
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 3vw;
+  }
+
+  #interesting .container .items-container .item {
+    height: fit-content;
+    width: 24vw;
+  }
+
+  #interesting .container .items-container .item img {
+    width: 23vw;
+
+    padding-right: 2vw;
+  }
+
+  #interesting .container .items-container .item h3 {
+    font-size: calc(16px + 8 * (100vw / 1280));
+  }
+
+  #interesting .container .items-container .item span {
+    left: 40vw;
+  }
+
+  #interesting .container .items-container .item span img {
+    width: 5vw;
+    height: auto;
+  }
+
+  #interesting .container .items-container .item .top-container {
+    gap: 0;
+  }
+
+  #interesting .container .items-container .item .top-container img {
+    width: auto;
   }
 }
 
