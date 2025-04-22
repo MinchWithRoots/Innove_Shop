@@ -1070,7 +1070,7 @@ footer .footer-info .socials-container img:hover {
   #interesting .container .items-container .item img {
     width: 65vw;
 
-    padding-right: 2vw;
+    /* padding-right: 2vw; */
   }
 
   #interesting .container .items-container .item h3 {
@@ -1116,6 +1116,14 @@ footer .footer-info .socials-container img:hover {
     padding-top: 0;
   } */
 }
+
+@media screen and (min-width: 380px) and (max-width: 500px) {
+  #interesting .container .items-container .item img {
+    padding-right: 2vw;
+  }
+
+}
+
 
 @media screen and (min-width: 470px) {
   .swiper-wrapper .swiper-slide {
@@ -1688,3 +1696,14 @@ footer .footer-info .socials-container img:hover {
   margin-left: 22vw;
 }
 }
+
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  footer .footer-info  {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 10px !important;
+  }
+}
+
